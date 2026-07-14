@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%" style="background:#0b0f19; font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif; border-radius: 8px;">
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0c1020" />
+      <stop offset="100%" stop-color="#180e29" />
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f093fb" />
+      <stop offset="100%" stop-color="#f5576c" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#9b51e0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#f5576c" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="250" fill="url(#bgGrad)" rx="8" />
+
+  <!-- Background Tech Grid / Nodes -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="250" />
+    <line x1="150" y1="0" x2="150" y2="250" />
+    <line x1="250" y1="0" x2="250" y2="250" />
+    <line x1="350" y1="0" x2="350" y2="250" />
+    <line x1="450" y1="0" x2="450" y2="250" />
+    <line x1="550" y1="0" x2="550" y2="250" />
+    <line x1="650" y1="0" x2="650" y2="250" />
+    <line x1="750" y1="0" x2="750" y2="250" />
+
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+  </g>
+
+  <!-- Glowing Line -->
+  <rect x="0" y="246" width="800" height="4" fill="url(#glowGrad)" />
+
+  <!-- Decorative Shapes / Glowing Orbs -->
+  <circle cx="120" cy="125" r="90" fill="#00f2fe" fill-opacity="0.03" filter="blur(20px)" />
+  <circle cx="680" cy="125" r="90" fill="#f5576c" fill-opacity="0.03" filter="blur(20px)" />
+
+  <!-- Glowing Tech Connections (Lines and Circles) -->
+  <path d="M 60 70 L 100 125 L 80 180" fill="none" stroke="#00f2fe" stroke-opacity="0.2" stroke-width="1.5" />
+  <path d="M 740 70 L 700 125 L 720 180" fill="none" stroke="#f5576c" stroke-opacity="0.2" stroke-width="1.5" />
+  
+  <circle cx="60" cy="70" r="3" fill="#00f2fe" fill-opacity="0.6" />
+  <circle cx="100" cy="125" r="4" fill="#00f2fe" fill-opacity="0.8" />
+  <circle cx="80" cy="180" r="3" fill="#00f2fe" fill-opacity="0.6" />
+  <circle cx="740" cy="70" r="3" fill="#f5576c" fill-opacity="0.6" />
+  <circle cx="700" cy="125" r="4" fill="#f5576c" fill-opacity="0.8" />
+  <circle cx="720" cy="180" r="3" fill="#f5576c" fill-opacity="0.6" />
+
+  <!-- Central Logo Icon (Hexagon + Brain/Gear concept) -->
+  <g transform="translate(140, 125)">
+    <!-- Outer Glowing Hexagon -->
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="none" stroke="url(#logoGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0px 0px 8px rgba(0, 242, 254, 0.4))" />
+    
+    <!-- Inner Gear/Neural Icon -->
+    <path d="M-15,-20 L-25,-10 L-25,10 L-15,20 L15,20 L25,10 L25,-10 L15,-20 Z" fill="none" stroke="url(#accentGrad)" stroke-width="2" />
+    <!-- Code Symbol < / > -->
+    <path d="M-12,-5 L-20,0 L-12,5" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M12,-5 L20,0 L12,5" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="-3" y1="10" x2="3" y2="-10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography -->
+  <text x="240" y="115" font-size="44" font-weight="800" letter-spacing="1">
+    <tspan fill="#ffffff">WHMCS </tspan>
+    <tspan fill="url(#logoGrad)">DEV SKILL</tspan>
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="242" y="152" font-size="16" font-weight="400" fill="#a0aec0" letter-spacing="0.5">Advanced AI Agent Skill for Modules &amp; Hooks</text>
+  
+  <!-- Version & License Pill badges -->
+  <g transform="translate(242, 175)">
+    <rect width="65" height="20" rx="10" fill="#1e293b" />
+    <text x="32" y="14" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">v1.0.0</text>
+    
+    <rect x="75" width="85" height="20" rx="10" fill="#1e293b" />
+    <text x="117" y="14" font-size="10" font-weight="600" fill="#34d399" text-anchor="middle">MIT License</text>
+    
+    <rect x="170" width="85" height="20" rx="10" fill="#1e293b" />
+    <text x="212" y="14" font-size="10" font-weight="600" fill="#fb923c" text-anchor="middle">PHP 8.2+</text>
+  </g>
+</svg>
